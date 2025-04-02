@@ -28,15 +28,17 @@
 
 // requirement 6: center align the heading for sections
 (function() {
-  document.querySelector('nav').style.textAlign = 'left';
+  document.querySelector('nav').style.textAlign = 'center';
 })();
 
 // requirement 7: change services icons color
 (function() {
   const icons = document.querySelectorAll('[data-icon]');
-  if (icons) {
-    icons.style.color = '#47C714';
-  }
+  icons.forEach(icon => {
+    if (icon) {
+      icon.style.color = '#47C714';
+    }
+  });
 })();
 
 // requirement 8: change the digital marketing icon to use 'Ads Click'
@@ -46,10 +48,16 @@
 
 // requirement 9: change to the layout of the tiles so that at >= 1024px they are 4 across
 (function() {
-  document.querySelector()
+  const cards = document.querySelector('[data-section="product_cards"');
+  if (cards) {
+    cards.style.gridTemplateColumns = 'repeat(4, 1fr)';
+  }
 })();
 
 // requirement 10: change the Musicians image
 (function() {
-  document.querySelector('#solutions .w-full h-auto')
+  const musciciansImage = document.querySelector('img[alt="Musicians"]');
+  if (musciciansImage) {
+    musciciansImage.src = 'https://picsum.photos/id/453/400/300'
+  }
 })();
