@@ -33,11 +33,23 @@
 
 // requirement 7: change services icons color
 (function() {
-  const icons = document.querySelector('#services span');
+  const icons = document.querySelectorAll('[data-icon]');
   if (icons) {
     icons.style.color = '#47C714';
   }
 })();
 
 // requirement 8: change the digital marketing icon to use 'Ads Click'
+(function() {
+  document.querySelector('[data-icon="digital"]').textContent = 'ads_click';
+})();
 
+// requirement 9: change to the layout of the tiles so that at >= 1024px they are 4 across
+(function() {
+  document.querySelector()
+})();
+
+// requirement 10: change the Musicians image
+(function() {
+
+})();
