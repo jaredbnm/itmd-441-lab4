@@ -12,9 +12,9 @@
 })();
 
 // requirement 3: change the image in the background of the hero
-// (function() {
-//   document.body.style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
-// })();
+(function() {
+  document.querySelector('#hero').style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
+})();
 
 // requirement 4: change the background color of the nav bar
 (function() {
@@ -51,5 +51,5 @@
 
 // requirement 10: change the Musicians image
 (function() {
-
+  document.querySelector('#solutions .w-full h-auto')
 })();
